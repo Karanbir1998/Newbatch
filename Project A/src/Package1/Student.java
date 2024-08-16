@@ -4,25 +4,25 @@ public class Student {
 	int age;
 	int rollno;
 	
-	public void Display1(){
+	public void Display1() {
 		System.out.println("Welcome to all of you");
 	}
 	
-	public void Display2(){
+	public void Display2() {
 		System.out.println("Automation is very easy");
 	}
-
+	
 	public static void main(String[] args) {
 		
-		Student s1=new Student();
+		Student s=new Student();
+		s.Display1();
+		s.Display2();
 		
-		s1.Display1();
-		s1.Display2();
+		s.age=26;
+		s.rollno=4;
 		
-		s1.age=26;
-		s1.rollno=4;
-		System.out.println("Value of age is: "+s1.age);
-		System.out.println("Value of rollno is: "+s1.rollno);		
+		System.out.println("My age is: "+s.age);
+		System.out.println("My rollno is: "+s.rollno);
+		
 	}
-
 }
